@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  spring_study:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: spring_study
+      MYSQL_USER: dongryun
+      MYSQL_PASSWORD: password
+      TZ: 'Asia/Tokyo'
+#    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "127.0.0.1:3306:3306"
+
+  spring_study_test:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: spring_study
+      MYSQL_USER: dongryun
+      MYSQL_PASSWORD: password
+      TZ: 'Asia/Tokyo'
+    ports:
+      - "127.0.0.1:3307:3306"
+
