@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `post` (
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `username` VARCHAR(50),
+    `password` VARCHAR(50),
+    `content` VARCHAR(2000),
+    `name` VARCHAR(30)
+) ENGINE=InnoDB DEFAULT CHARSET=UTF8;
