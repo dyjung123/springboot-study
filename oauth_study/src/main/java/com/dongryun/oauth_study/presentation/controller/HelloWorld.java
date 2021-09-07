@@ -1,4 +1,4 @@
-package com.dongryun.oauth_study.controller;
+package com.dongryun.oauth_study.presentation.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
