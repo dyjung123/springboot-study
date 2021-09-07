@@ -1,6 +1,7 @@
 package com.dongryun.oauth_study.presentation.controller;
 
-import com.dongryun.oauth_study.service.PostService;
+import com.dongryun.oauth_study.application.service.PostService;
+import com.dongryun.oauth_study.presentation.controller.model.PostFormModel;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
