@@ -9,9 +9,6 @@ spring:
     username: dongryun
     password: password
   flyway:
-    user: dongryun
-    password: password
-    url: jdbc:mysql://localhost:3306/spring_study?characterEncoding=UTF-8&serverTimezone=Asia/Tokyo
     locations: classpath:db/migration
   devtools:
     remote:
