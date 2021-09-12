@@ -24,3 +24,7 @@ services:
     ports:
       - "127.0.0.1:3307:3306"
 
+  nginx:
+    build: nginx/.
+    ports:
+      - "8080:80"
