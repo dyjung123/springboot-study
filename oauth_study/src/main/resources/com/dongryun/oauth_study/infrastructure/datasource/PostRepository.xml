@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dongryun.oauth_study.infrastructure.datasource.PostRepository">
+
+  <resultMap id="entity" type="com.dongryun.oauth_study.infrastructure.entity.Post" autoMapping="true">
+    <id property="id" column="id" />
+  </resultMap>
+
+  <sql id="selectColumns">
+    id,
+    username,
+    password,
+    content,
+    name
+  </sql>
+
+  <sql id="fromTable">
+    post
+  </sql>
+
+  <select id="findAll">
+    SELECT <include refid="selectColumns" />
+    FROM <include refid="fromTable" />
+  </select>
+</mapper>
