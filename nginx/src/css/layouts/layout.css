@@ -1,0 +1,17 @@
+body {
+    @apply flex flex-col h-screen;
+}
+
+.main-container {
+    @apply mx-auto flex-grow;
+    @screen sm {
+        & {
+            @apply w-11/12;
+        }
+    }
+    @screen lg {
+        & {
+            @apply w-1000;
+        }
+    }
+}

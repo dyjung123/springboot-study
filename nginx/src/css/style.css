@@ -2,4 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@import 'components/form/form.css';
+@import './layouts/layout.css';
+@import './components/common/section.css';
+@import './components/form/form.css';
